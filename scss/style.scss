@@ -1,0 +1,122 @@
+$wcolor:#fff;
+$bcolor:#000000;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/* Fonts */
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/SofiaProBold.woff2") format("woff2"),
+        url("fonts/SofiaProBold.woff") format("woff"),
+        url("fonts/SofiaProBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/SofiaProMedium.woff2") format("woff2"),
+        url("fonts/SofiaProMedium.woff") format("woff"),
+        url("fonts/SofiaProMedium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Circular Std";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/circular-std-6.woff2") format("woff2"),
+        url("fonts/circular-std-6.woff") format("woff"),
+        url("fonts/circular-std-medium-500.ttf") format("truetype");
+}
+html {
+    font-family: "Circular Std", "Sofia Pro", sans-serif;
+}
+body {
+    overflow-x: hidden;
+    font-size: 15px;
+}
+
+.wrapper {
+    background:$wcolor;
+    padding-top: 50px;
+    padding-bottom: 64px;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .logo {
+    }
+    .search {
+    
+            &__item {
+            }
+    }
+
+		&__items {
+            display: flex;
+		}
+
+		&__item {
+		}
+
+		&__icons {
+		}
+
+		&__icon {
+		}
+}
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+
+    &__name {
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+
+    &__help {
+    }
+}
+.help {
+
+    &__item {
+    }
+}
+main {
+    display: grid;
+    grid-template-columns: 10% 37% 37%;
+    grid-template-rows: 48% ;
+    gap: 21px;
+
+    &__group {
+        display: flex;
+    }
+    &__group:nth-child(3){
+        grid-column-start: 2;
+    }
+    &__item {
+    }
+
+    &__img {
+    }
+}
+

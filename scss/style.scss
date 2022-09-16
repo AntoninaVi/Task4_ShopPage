@@ -1,5 +1,5 @@
-$wcolor:#fff;
-$bcolor:#000000;
+$wcolor: #fff;
+$bcolor: #000000;
 
 *,
 *:before,
@@ -14,24 +14,21 @@ $bcolor:#000000;
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 800;
-    src: url("fonts/SofiaProBold.woff2") format("woff2"),
-        url("fonts/SofiaProBold.woff") format("woff"),
+    src: url("fonts/SofiaProBold.woff2") format("woff2"), url("fonts/SofiaProBold.woff") format("woff"),
         url("fonts/SofiaProBold.ttf") format("truetype");
 }
 @font-face {
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/SofiaProMedium.woff2") format("woff2"),
-        url("fonts/SofiaProMedium.woff") format("woff"),
+    src: url("fonts/SofiaProMedium.woff2") format("woff2"), url("fonts/SofiaProMedium.woff") format("woff"),
         url("fonts/SofiaProMedium.ttf") format("truetype");
 }
 @font-face {
     font-family: "Circular Std";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/circular-std-6.woff2") format("woff2"),
-        url("fonts/circular-std-6.woff") format("woff"),
+    src: url("fonts/circular-std-6.woff2") format("woff2"), url("fonts/circular-std-6.woff") format("woff"),
         url("fonts/circular-std-medium-500.ttf") format("truetype");
 }
 html {
@@ -41,9 +38,8 @@ body {
     overflow-x: hidden;
     font-size: 15px;
 }
-
 .wrapper {
-    background:$wcolor;
+    background: $wcolor;
     padding-top: 50px;
     padding-bottom: 64px;
 }
@@ -54,69 +50,128 @@ body {
     margin-right: auto;
 }
 
-nav {
+.navigation {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 75px;
+
     .logo {
+        position: relative;
+        z-index: 1;
+        color: $bcolor;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -45%;
+            right: 70%;
+            background-color: #f4de4d;
+            width: 40px;
+            height: 40px;
+            z-index: -1;
+            border-radius: 50%;
+        }
     }
-    .search {
-    
-            &__item {
-            }
+    .search__item {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 17px;
+        }
+    }
+    .input {
+        border: none;
+        color: #000000;
+        opacity: 0.2;
+        padding: 10px 0;
+    }
+    .nav__items {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Circular Std";
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
     }
 
-		&__items {
-            display: flex;
-		}
+    .nav__item {
+        color: $bcolor;
+        margin-right: 40px;
+        &:hover {
+            border-bottom: 3px solid $bcolor;
+            transition: all 0.2s;
+        }
+    }
 
-		&__item {
-		}
-
-		&__icons {
-		}
-
-		&__icon {
-		}
+    .nav__icons {
+        margin-left: 47px;
+        .nav__icon:last-of-type {
+            margin-left: 25px;
+        }
+    }
 }
-
 .sidebar {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    &__name {
+    .sidebar__title {
+        margin-bottom: 45px;
+    }
+    a {
+        font-family: "Sofia Pro";
+        font-weight: 400;
+        font-size: 15.7099px;
+        line-height: 24px;
+        color: $bcolor;
     }
 
-    &__items {
-    }
+    .sidebar__list {
+        list-style: none;
+        margin-right: 6.4em;
+        white-space: nowrap;
 
-    &__item {
+        .sidebar__title {
+            margin-bottom: 45px;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-bottom: 26px;
+        }
+        img {
+            margin-right: 12px;
+        }
     }
 
     &__help {
     }
 }
-.help {
-
-    &__item {
+.sidebar__help {
+    img {
+        margin-right: 20px;
     }
 }
 main {
     display: grid;
-    grid-template-columns: 10% 37% 37%;
-    grid-template-rows: 48% ;
-    gap: 21px;
+    grid-template-columns: 20% 98%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1099px;
+    width: 100%;
 
-    &__group {
-        display: flex;
-    }
-    &__group:nth-child(3){
-        grid-column-start: 2;
-    }
-    &__item {
+    .main__groups {
+        display: grid;
+        grid-template-columns: 539px 539px;
+        grid-template-rows: 42.6%;
+        gap: 10px 10px;
     }
 
-    &__img {
+    .main__group {
+        img {
+        }
     }
 }
-

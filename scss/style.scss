@@ -214,6 +214,9 @@ main {
             border: none;
             z-index: 1;
             cursor: pointer;
+            &:active{
+                background-color: #FD2E24;
+            }
         }
         .heart-flip {
         }

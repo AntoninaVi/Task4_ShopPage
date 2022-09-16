@@ -58,7 +58,9 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    .nav__base {
+        display: flex;
+    }
     .logo {
         position: relative;
         left: 1%;
@@ -66,6 +68,7 @@ body {
         color: $bcolor;
         font-size: 21px;
         line-height: 27px;
+        margin-right: 8em;
 
         &::before {
             content: "";
@@ -80,20 +83,21 @@ body {
         }
     }
     .search__item {
-        display: flex;
-        align-items: center;
         img {
             margin-right: 17px;
         }
-    }
-    input {
-        border: none;
-        padding: 5px;
-        .placeholder {
-            color: #000000;
-            opacity: 0.2;
+        input {
+            vertical-align: top;
+            border: none;
+            padding: 5px;
+
+            .placeholder {
+                color: #000000;
+                opacity: 0.2;
+            }
         }
     }
+
     .nav__items {
         display: flex;
         justify-content: space-between;
@@ -176,18 +180,42 @@ main {
         row-gap: 0px;
         max-width: 1100px;
         width: 100%;
-        img:hover{
+        img:hover {
             transition: ease-in-out 0.2s;
             opacity: 60%;
         }
+        .main__group:first-child img:first-child,
+        .main__group:last-child img:first-child {
+            margin-bottom: 20px;
+        }
+        .main__group:nth-child(2) a:first-child,
+        .main__group:nth-child(3) a:first-child {
+            margin-right: 17px;
+        }
+        .main__group {
+            position: relative;
+        }
+        .main__group:nth-child(2) .main__item:nth-child(2) button,
+        .main__group:nth-child(3) .main__item:nth-child(2) button{
+            left: 90%;
+        }
+        
+        .heart-button {
+            position: absolute;
+            left: 39%;
+            top: 6%;
+            background-image: url(/img/heart.svg);
+            background-repeat: no-repeat;
+            background-color: $wcolor;
+            width: 30px;
+            height: 30px;
+            background-position: center;
+            border-radius: 50%;
+            border: none;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .heart-flip {
+        }
     }
-    .main__group:first-child img:first-child,
-    .main__group:last-child img:first-child {
-        margin-bottom: 20px;
-    }
-    .main__group:nth-child(2) a:first-child,
-    .main__group:nth-child(3) a:first-child {
-        margin-right: 17px;
-    }
-    
 }

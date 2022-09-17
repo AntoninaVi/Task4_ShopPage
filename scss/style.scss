@@ -138,6 +138,11 @@ body {
         font-size: 15.7099px;
         line-height: 24px;
         color: $bcolor;
+        &:hover{
+            color: #E93930;
+            transition: ease-in-out 0.2s;
+        }
+        }
     }
     .sidebar__list {
         list-style: none;
@@ -163,7 +168,7 @@ body {
             margin-right: 20px;
         }
     }
-}
+
 main {
     display: grid;
     grid-template-columns: 17% 80%;
@@ -196,29 +201,30 @@ main {
             position: relative;
         }
         .main__group:nth-child(2) .main__item:nth-child(2) button,
-        .main__group:nth-child(3) .main__item:nth-child(2) button{
+        .main__group:nth-child(3) .main__item:nth-child(2) button {
             left: 90%;
         }
-        
+
         .heart-button {
             position: absolute;
             left: 39%;
             top: 6%;
-            background-image: url(/img/heart.svg);
-            background-repeat: no-repeat;
             background-color: $wcolor;
             width: 30px;
             height: 30px;
-            background-position: center;
             border-radius: 50%;
             border: none;
             z-index: 1;
             cursor: pointer;
-            &:active{
-                background-color: #FD2E24;
+            img {
+                display: flex;
+                align-items: center;
+                background-color: $wcolor;
+                width: 14px;
+                margin-left: auto;
+                margin-right: auto;
+                color: $wcolor;
             }
-        }
-        .heart-flip {
         }
     }
 }

@@ -64,16 +64,16 @@
                     </div>
                     <div class="main__group">
                         <a href="#" class="main__item">
-                            <button class="heart-button">
-                                <div class="heart-flip"></div>
+                            <button type="submit" class="heart-button">
+                                <img src="img/heart.svg" alt="">
                             </button>
                             <img src="img/pink_hair.png" alt="discount" class="main__img">
                         </a>
 
 
                         <a href="#" class="main__item">
-                            <button class="heart-button">
-                                <div class="heart-flip"></div>
+                            <button type="button" class="heart-button">
+                                <img src="img/heart.svg" alt="">
                             </button>
                             <img src="img/curly_hair.png" alt="discount" class="main__img">
                         </a>
@@ -81,15 +81,15 @@
 
                     <div class="main__group">
                         <a href="#" class="main__item">
-                            <button class="heart-button">
-                                <div class="heart-flip"></div>
+                            <button type="button" class="heart-button">
+                                <img src="img/heart.svg" alt="">
                             </button>
                             <img src="img/martini.png" alt="discount" class="main__img">
                         </a>
 
                         <a href="#" class="main__item">
-                            <button class="heart-button">
-                                <div class="heart-flip"></div>
+                            <button type="button" class="heart-button">
+                                <img src="img/heart.svg" alt="">
                             </button>
                             <img src="img/white_hair.png" alt="discount" class="main__img">
                         </a>
@@ -105,7 +105,14 @@
     </div>
 
     <script>
-        document.querySelectorAll('button.heart-button').forEach(button => button.addEventListener('click', e => button.classList.toggle('active')));
+        var box = document.getElementsByTagName("button");
+        for (var i = 0; i < box.length; i++)
+            box[i].onclick = function () {
+                if (this.style.backgroundColor == "") this.style.backgroundColor = "#E93930";
+                else this.style.backgroundColor = ""
+
+            };
+
     </script>
 </body>
 

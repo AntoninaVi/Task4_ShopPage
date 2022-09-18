@@ -4,7 +4,7 @@ $bcolor: #000000;
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+    box-sizing: inherit;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -33,6 +33,7 @@ $bcolor: #000000;
 }
 html {
     font-family: "Circular Std", "Sofia Pro", sans-serif;
+    box-sizing: border-box;
 }
 body {
     font-size: 15px;
@@ -48,7 +49,14 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+@media screen and (max-width: 1350px) {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 20px;
+    }
+}
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -123,30 +131,37 @@ body {
         }
     }
 }
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 6.4em;
 
-    .sidebar__title {
-        margin-bottom: 45px;
-    }
-    a {
-        font-family: "Sofia Pro";
-        font-weight: 400;
-        font-size: 15.7099px;
-        line-height: 24px;
-        color: $bcolor;
-        &:hover{
-            color: #E93930;
-            transition: ease-in-out 0.2s;
+main {
+    display: grid;
+    grid-template-columns: 17% 80%;
+    max-width: 100%;
+    width: 83em;
+    margin-left: auto;
+    margin-right: auto;
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sidebar__title {
+            margin-bottom: 45px;
         }
+        a {
+            font-family: "Sofia Pro";
+            font-weight: 400;
+            font-size: 15.7099px;
+            line-height: 24px;
+            color: $bcolor;
+            &:hover {
+                color: #e93930;
+                transition: ease-in-out 0.2s;
+            }
         }
     }
     .sidebar__list {
         list-style: none;
-        margin-right: 6.4em;
         white-space: nowrap;
 
         .sidebar__title {
@@ -169,28 +184,24 @@ body {
         }
     }
 
-main {
-    display: grid;
-    grid-template-columns: 17% 80%;
-    max-width: 1328px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
     .main__groups {
         display: grid;
-        grid-template-columns: 539px 539px;
-        grid-template-rows: 50%;
-        column-gap: 20px;
-        row-gap: 0px;
-        max-width: 1100px;
+        grid-template-columns:repeat(2, 50%);
+        grid-template-rows: 45%;
+        column-gap:  1.25em;
+        row-gap: 1.25em;
+        max-width: 68.75em;
         width: 100%;
         img:hover {
             transition: ease-in-out 0.2s;
             opacity: 60%;
         }
-        .main__group:first-child img:first-child,
-        .main__group:last-child img:first-child {
+        .main__group:nth-child(2),
+        .main__group:nth-child(3) {
+            white-space: nowrap;
+        }
+        .main__group:first-child img:first-of-type,
+        .main__group:last-child img:first-of-type {
             margin-bottom: 20px;
         }
         .main__group:nth-child(2) a:first-child,
@@ -199,12 +210,18 @@ main {
         }
         .main__group {
             position: relative;
+            width: 33.68em;
+            max-width: 100%;
         }
         .main__group:nth-child(2) .main__item:nth-child(2) button,
         .main__group:nth-child(3) .main__item:nth-child(2) button {
             left: 90%;
         }
-
+        .main__item{
+            width: 100%;
+            height: 100%;
+           
+        }
         .heart-button {
             position: absolute;
             left: 39%;
@@ -228,3 +245,16 @@ main {
         }
     }
 }
+@media all and (max-width: 1350px) {
+    main {
+        max-width: 80%;
+    }
+}
+@media all and (max-width: 1350px) {
+    main {
+        max-width: 80%;
+    }
+}
+
+
+

@@ -54,7 +54,7 @@ body {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px 20px;
+        padding: 0px 0px;
     }
 }
 .navigation {
@@ -134,9 +134,9 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 17% 80%;
+    grid-template-columns: 14vw 58vw;
     max-width: 100%;
-    width: 83em;
+    width: 1328px;
     margin-left: auto;
     margin-right: auto;
 
@@ -186,10 +186,13 @@ main {
 
     .main__groups {
         display: grid;
-        grid-template-columns:repeat(2, 50%);
-        grid-template-rows: 45%;
-        column-gap:  1.25em;
-        row-gap: 1.25em;
+        grid-template-columns: 33vw 33vw;
+        grid-template-rows: 24vw 23vw;
+        grid-template-areas:
+            ". ."
+            ". .";
+        column-gap: 1vw;
+        row-gap: 1vw;
         max-width: 68.75em;
         width: 100%;
         img:hover {
@@ -200,31 +203,26 @@ main {
         .main__group:nth-child(3) {
             white-space: nowrap;
         }
-        .main__group:first-child img:first-of-type,
-        .main__group:last-child img:first-of-type {
-            margin-bottom: 20px;
+
+        .main__group:first-child img:first-child,
+        .main__group:last-child img:first-child {
+            margin-bottom: 1vw;
         }
         .main__group:nth-child(2) a:first-child,
         .main__group:nth-child(3) a:first-child {
-            margin-right: 17px;
+            margin-right: 1vw;
         }
         .main__group {
             position: relative;
-            width: 33.68em;
             max-width: 100%;
         }
         .main__group:nth-child(2) .main__item:nth-child(2) button,
         .main__group:nth-child(3) .main__item:nth-child(2) button {
-            left: 90%;
-        }
-        .main__item{
-            width: 100%;
-            height: 100%;
-           
+            left: 89%;
         }
         .heart-button {
             position: absolute;
-            left: 39%;
+            left: 38%;
             top: 6%;
             background-color: $wcolor;
             width: 30px;
@@ -243,18 +241,24 @@ main {
                 color: $wcolor;
             }
         }
-    }
-}
-@media all and (max-width: 1350px) {
-    main {
-        max-width: 80%;
-    }
-}
-@media all and (max-width: 1350px) {
-    main {
-        max-width: 80%;
+        @media all and (max-width: 1200px) {
+            .heart-button {
+                width: 7%;
+                height: 10%;
+            }
+        }
+        @media all and (max-width: 1200px) {
+            .heart-button img {
+                width: 70%;
+                height: 60%;
+            }
+        }
     }
 }
 
-
-
+@media all and (max-width: 1700px) {
+    .main__img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

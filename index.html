@@ -34,11 +34,24 @@
                             <a href="#" class="nav__icon"><img src="img/basket.svg" alt="basket"></a>
                             <a href="#" class="nav__icon"><img src="img/person.svg" alt="person"></a>
                         </div>
-
-
                     </div>
+                    <!-- Burger -->
+                    <div id="burger-menu">
+                        <span></span>
+                    </div>
+
+                    <div id="menu">
+                        <ul>
+                            <a href="#" class="nav__item">products</a>
+                            <a href="#" class="nav__item">story</a>
+                            <a href="#" class="nav__item">manufacturing</a>
+                            <a href="#" class="nav__item">packaging</a>
+                        </ul>
+                    </div>
+
                 </nav>
             </header>
+
             <main>
                 <div class="sidebar">
                     <div class="sidebar__items">
@@ -104,6 +117,7 @@
         </div>
     </div>
 
+
     <script>
         var box = document.getElementsByTagName("button");
         for (var i = 0; i < box.length; i++)
@@ -112,8 +126,19 @@
                 else this.style.backgroundColor = ""
 
             };
-
     </script>
+
+    <script>
+        var burgerMenu = document.getElementById('burger-menu');
+
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+    </script>
+
 </body>
 
 </html>

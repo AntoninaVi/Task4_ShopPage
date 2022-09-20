@@ -179,8 +179,8 @@ body {
             z-index: 2;
         }
     }
-    @media (max-width: 930px){
-        #burger-menu{
+    @media (max-width: 930px) {
+        #burger-menu {
             margin-right: 1em;
         }
     }
@@ -302,6 +302,12 @@ main {
         .sidebar__title {
             margin-bottom: 45px;
         }
+        @media screen and(max-width:750px) {
+            .sidebar__title {
+                margin-bottom: 15px;
+                text-align: center;
+            }
+        }
         a {
             font-family: "Sofia Pro";
             font-weight: 400;
@@ -314,21 +320,32 @@ main {
             }
         }
     }
+
+    
     .sidebar__list {
         list-style: none;
         white-space: nowrap;
-
-        .sidebar__title {
-            margin-bottom: 45px;
-        }
         li {
             display: flex;
             align-items: center;
             justify-content: left;
             margin-bottom: 26px;
         }
+        @media screen and(max-width:750px) {
+            li {
+                margin: 10px;
+            }
+        }
         img {
             margin-right: 12px;
+        }
+    }
+    @media screen and(max-width:750px) {
+        .sidebar__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
         }
     }
     .sidebar__help {
@@ -337,7 +354,11 @@ main {
             margin-right: 20px;
         }
     }
-
+    @media screen and(max-width:750px) {
+        .sidebar__help{
+            text-align: center;
+        }
+    }
     .main__groups {
         display: grid;
         grid-template-columns: 27vw 27vw;
@@ -377,11 +398,8 @@ main {
                     max-height: 100%;
                 }
             }
-            @media all and (min-width: 900px){
-                .main__img {
-                    max-height: 50%;
-            }
         }
+
         .main__group:nth-child(2) .main__item:nth-child(2) button,
         .main__group:nth-child(3) .main__item:nth-child(2) button {
             left: 88%;
@@ -389,7 +407,13 @@ main {
         @media all and (max-width: 1030px) {
             .main__group:nth-child(2) .main__item:nth-child(2) button,
             .main__group:nth-child(3) .main__item:nth-child(2) button {
-                left: 35em;
+                left: 8.5em;
+            }
+        }
+        @media all and (max-width: 930px) {
+            .main__group:nth-child(2) .main__item:nth-child(2) button,
+            .main__group:nth-child(3) .main__item:nth-child(2) button {
+                left: 15em;
             }
         }
         .heart-button {
@@ -416,10 +440,15 @@ main {
 
         @media all and (max-width: 1030px) {
             .heart-button {
-                left: 15em;
+                left: 20em;
             }
         }
-        
+        @media all and (max-width: 930px) {
+            .heart-button {
+                left: 35em;
+            }
+        }
+
         @media all and (max-width: 1200px) {
             .heart-button img {
                 width: 70%;
@@ -438,13 +467,12 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
+
             width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
     }
-    
 }
 
 @media all and (max-width: 1850px) {
@@ -457,8 +485,21 @@ main {
         grid-template-columns: 15vw 53vw;
     }
 }
-@media all and (max-width: 930px){
+@media all and (max-width: 930px) {
     main {
         grid-template-columns: 25vw 70vw;
     }
 }
+@media all and (max-width: 770px) {
+    main {
+        grid-template-columns: 19vw 70vw;
+    }
+}
+@media screen and(max-width:750px) {
+    main {
+        grid-template-columns: 75vw;
+        justify-content: center;
+    }
+}
+
+

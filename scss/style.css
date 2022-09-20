@@ -51,14 +51,15 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 52px 46px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1600px) {
   .container {
-    width: 100%;
+    width: 84%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 0px;
+    padding: 20px 20px;
   }
 }
 
@@ -73,8 +74,8 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-bottom: 78px;
-  max-width: 1328px;
-  width: 100%;
+  max-width: 100%;
+  width: 1328px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,8 +147,14 @@ body {
   transition: all 0.2s;
 }
 
+@media all and (max-width: 1250px) {
+  .navigation .nav__item {
+    margin-right: 20px;
+  }
+}
+
 .navigation .nav__icons {
-  margin-left: 47px;
+  margin-left: 10px;
 }
 
 .navigation .nav__icons .nav__icon:last-of-type {
@@ -157,10 +164,10 @@ body {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 14vw 58vw;
-      grid-template-columns: 14vw 58vw;
-  max-width: 100%;
-  width: 1328px;
+  -ms-grid-columns: 15vw 58vw;
+      grid-template-columns: 15vw 58vw;
+  max-width: 1328px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -223,7 +230,7 @@ main .sidebar__list img {
 }
 
 main .sidebar__help {
-  margin-bottom: 20%;
+  margin-bottom: 9%;
 }
 
 main .sidebar__help img {
@@ -233,16 +240,16 @@ main .sidebar__help img {
 main .main__groups {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33vw 33vw;
-      grid-template-columns: 33vw 33vw;
-  -ms-grid-rows: 24vw 23vw;
-      grid-template-rows: 24vw 23vw;
+  -ms-grid-columns: 27vw 27vw;
+      grid-template-columns: 27vw 27vw;
+  -ms-grid-rows: 19vw 19vw;
+      grid-template-rows: 19vw 19vw;
       grid-template-areas: ". ." ". .";
-  -webkit-column-gap: 1vw;
-          column-gap: 1vw;
-  row-gap: 1vw;
-  max-width: 68.75em;
-  width: 100%;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+  width: 68.6em;
+  max-width: 100%;
 }
 
 main .main__groups img:hover {
@@ -257,7 +264,7 @@ main .main__groups .main__group:nth-child(3) {
 }
 
 main .main__groups .main__group:first-child img:first-child,
-main .main__groups .main__group:last-child img:first-child {
+main .main__groups .main__group:last-child img:last-child {
   margin-bottom: 1vw;
 }
 
@@ -271,14 +278,19 @@ main .main__groups .main__group {
   max-width: 100%;
 }
 
+main .main__groups .main__group .main__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 main .main__groups .main__group:nth-child(2) .main__item:nth-child(2) button,
 main .main__groups .main__group:nth-child(3) .main__item:nth-child(2) button {
-  left: 89%;
+  left: 88%;
 }
 
 main .main__groups .heart-button {
   position: absolute;
-  left: 38%;
+  left: 37%;
   top: 6%;
   background-color: #fff;
   width: 30px;
@@ -317,10 +329,19 @@ main .main__groups .heart-button img {
   }
 }
 
-@media all and (max-width: 1700px) {
-  .main__img {
-    max-width: 100%;
-    max-height: 100%;
+@media all and (max-width: 1750px) {
+  main .main__groups {
+    -ms-grid-columns: 32vw 32vw;
+        grid-template-columns: 32vw 32vw;
+    -ms-grid-rows: 23vw 23vw;
+        grid-template-rows: 23vw 23vw;
+  }
+}
+
+@media all and (max-width: 1850px) {
+  main {
+    -ms-grid-columns: 17vw 64vw;
+        grid-template-columns: 17vw 64vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

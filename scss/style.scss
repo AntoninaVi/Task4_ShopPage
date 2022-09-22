@@ -104,6 +104,17 @@ body {
             margin-right: 5em;
         }
     }
+    @media all and (max-width: 540px){
+        .logo {
+            margin-left: 1em;
+            margin-right: 1.5em;
+        }
+    }
+    @media all and (max-width: 420px){
+        .logo{
+            font-size: 16px;
+        }
+    }
     .search__item {
         img {
             margin-right: 17px;
@@ -119,7 +130,18 @@ body {
             }
         }
     }
-
+    @media all and (max-width: 520px){
+        .search__item img{
+            margin-right: 0;
+        }
+    }
+    @media all and (max-width: 420px){
+        .search__item{
+           display: none;
+         
+            
+        }
+    }
     .nav__items {
         display: flex;
         justify-content: space-between;
@@ -184,7 +206,7 @@ body {
             margin-right: 1em;
         }
     }
-    // LINES
+
     span,
     span:before,
     span:after {
@@ -201,44 +223,37 @@ body {
         content: "";
     }
 
-    // TOP
     span:before {
         left: 0px;
         top: -10px;
         width: 27px;
     }
 
-    // MIDDLE
     span {
         right: 0px;
         top: 13px;
         width: 27px;
     }
 
-    // BOTTOM
     span:after {
         left: 0px;
         top: 10px;
         width: 27px;
     }
 
-    // ROTATION ON CLICK
     .close {
-        // TOP
         span:before {
             top: 0px;
             transform: rotate(90deg);
             width: 27px;
         }
 
-        // MIDDLE
         span {
             transform: rotate(-45deg);
             top: 13px;
             width: 27px;
         }
 
-        // BOTTOM
         span:after {
             top: 0px;
             left: 0;
@@ -421,6 +436,12 @@ main {
                 left: 15em;
             }
         }
+        @media all and (max-width: 680px) {
+            .main__group:nth-child(2) .main__item:nth-child(2) button,
+            .main__group:nth-child(3) .main__item:nth-child(2) button {
+                left: 38%;
+            }
+        }
         .heart-button {
             position: absolute;
             left: 37%;
@@ -453,7 +474,11 @@ main {
                 left: 35em;
             }
         }
-
+        @media all and (max-width: 680px) {
+            .heart-button {
+                left: 89%;
+            }
+        }
         @media all and (max-width: 1200px) {
             .heart-button img {
                 width: 70%;
@@ -472,7 +497,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-
+            gap: 1vw;
             width: 100%;
             margin-left: auto;
             margin-right: auto;

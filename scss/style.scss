@@ -420,9 +420,14 @@ main {
         }
         @media all and (max-width: 690px) {
             .main__img {
-                max-height: 54vmin;
+                max-height: 53vmin;
             }
         }
+        // @media all and (max-width: 660px) {
+        //     .main__img {
+        //         max-height: 70vmin;
+        //     }
+        // }
 
         .main__group:nth-child(2) .main__item:nth-child(2) button,
         .main__group:nth-child(3) .main__item:nth-child(2) button {

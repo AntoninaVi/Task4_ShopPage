@@ -29,8 +29,8 @@ $rcolor: #e93930;
     font-family: "Circular Std";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/CircularStd-Medium.woff2") format("woff2"), url("fonts/CircularStd-Medium.woff") format("woff"),
-        url("fonts/CircularStd-Medium.ttf") format("truetype");
+    src: url("/fonts/CircularStdMedium.woff2") format("woff2"), url("fonts/CircularStdMedium.woff") format("woff"),
+        url("fonts/CircularStdMedium.ttf") format("truetype");
 }
 html {
     font-family: "Circular Std", "Sofia Pro", sans-serif;

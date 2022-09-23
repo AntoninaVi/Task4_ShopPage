@@ -62,8 +62,7 @@ body {
         width: 95%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px 20px;
     }
 }
 .navigation {
@@ -98,6 +97,7 @@ body {
             border-radius: 50%;
         }
     }
+
     @media all and(max-width:1150px) {
         .logo {
             margin-left: 1em;
@@ -113,6 +113,12 @@ body {
     @media all and (max-width: 420px) {
         .logo {
             font-size: 16px;
+            &::before {
+                width: 30px;
+                height: 30px;
+                top: -13%;
+                left: -30%;
+            }
         }
     }
     .search__item {
@@ -276,8 +282,9 @@ body {
 
         &.overlay {
             visibility: visible;
-            opacity: 70%;
+            opacity: 80%;
             padding-top: 100px;
+            max-width: 100%;
             background: $bcolor;
         }
 
@@ -369,6 +376,7 @@ main {
     @media screen and(max-width:750px) {
         .sidebar__help {
             text-align: center;
+            margin-bottom: 3em;
         }
     }
     .main__groups {
@@ -400,12 +408,12 @@ main {
         .main__group:nth-child(3) a:first-child {
             margin-right: 1vw;
         }
-        @media all and (max-width: 690px) {
-            .main__group:nth-child(2) a:first-child,
-            .main__group:nth-child(3) a:first-child {
-                margin-right: 3vw;
-            }
-        }
+        // @media all and (max-width: 690px) {
+        //     .main__group:nth-child(2) a:first-child,
+        //     .main__group:nth-child(3) a:first-child {
+        //         margin-right: 3vw;
+        //     }
+        // }
         .main__group {
             position: relative;
             max-width: 100%;
@@ -420,10 +428,20 @@ main {
         }
         @media all and (max-width: 690px) {
             .main__img {
-                max-height: 68vmin;
+                max-height: 61vmin;
             }
         }
         @media all and (max-width: 660px) {
+            .main__img {
+                max-height: 59vmin;
+            }
+        }
+        @media all and (max-width: 630px) {
+            .main__img {
+                max-height: 57vmin;
+            }
+        }
+        @media all and (max-width: 615px) {
             .main__img {
                 max-height: 54vmin;
             }
@@ -481,14 +499,20 @@ main {
                 left: 35em;
             }
         }
-        @media all and (max-width: 680px) {
+        @media all and (max-width: 660px) {
             .heart-button {
                 left: 89%;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        @media all and (max-width: 380px) {
+            .heart-button {
                 width: 20px;
                 height: 20px;
             }
         }
-        
+
         @media all and (max-width: 1200px) {
             .heart-button img {
                 width: 70%;

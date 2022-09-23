@@ -420,14 +420,14 @@ main {
         }
         @media all and (max-width: 690px) {
             .main__img {
-                max-height: 53vmin;
+                max-height: 68vmin;
             }
         }
-        // @media all and (max-width: 660px) {
-        //     .main__img {
-        //         max-height: 70vmin;
-        //     }
-        // }
+        @media all and (max-width: 660px) {
+            .main__img {
+                max-height: 54vmin;
+            }
+        }
 
         .main__group:nth-child(2) .main__item:nth-child(2) button,
         .main__group:nth-child(3) .main__item:nth-child(2) button {
@@ -466,10 +466,8 @@ main {
                 display: flex;
                 align-items: center;
                 background-color: $wcolor;
-                width: 14px;
                 margin-left: auto;
                 margin-right: auto;
-                color: $wcolor;
             }
         }
 
@@ -486,12 +484,21 @@ main {
         @media all and (max-width: 680px) {
             .heart-button {
                 left: 89%;
+                width: 20px;
+                height: 20px;
             }
         }
+        
         @media all and (max-width: 1200px) {
             .heart-button img {
                 width: 70%;
                 height: 60%;
+            }
+        }
+        @media all and (max-width: 450px) {
+            .heart-button img {
+                width: 50%;
+                height: 50%;
             }
         }
     }

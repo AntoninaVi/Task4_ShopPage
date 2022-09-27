@@ -60,13 +60,12 @@ body {
 }
 @media screen and (max-width: 1500px) {
     .container {
-        width: 89%;
+        width: 88%;
         margin-left: auto;
         margin-right: auto;
         padding: 20px 20px;
     }
 }
-
 
 .navigation {
     display: flex;
@@ -194,7 +193,7 @@ body {
 
     #burger-menu {
         display: none;
-        margin-right: 1.5em;
+        margin-right: 1.5rem;
         cursor: pointer;
         height: 30px;
         width: 30px;
@@ -204,13 +203,19 @@ body {
     }
     @media (max-width: 1150px) {
         #burger-menu {
+            margin-right: -1rem;
             display: block;
             position: relative;
         }
     }
     @media (max-width: 930px) {
         #burger-menu {
-            margin-right: 1em;
+            margin-right: -2rem;
+        }
+    }
+    @media (max-width: 850px) {
+        #burger-menu {
+            margin-right: -10%;
         }
     }
 
@@ -308,8 +313,13 @@ body {
         }
     }
 }
+@media screen and (max-width: 1580px){
+    .navigation{
+        width: 97%;
+    }
+}
 
-main {
+.main__page {
     display: grid;
     grid-template-columns: 15vw 58vw;
     max-width: 1328px;
@@ -559,27 +569,27 @@ main {
 }
 
 @media all and (max-width: 1850px) {
-    main {
-        grid-template-columns: 17vw 64vw;
+    .main__page {
+        grid-template-columns: 15.3vw 64vw;
     }
 }
 @media all and (max-width: 1050px) {
-    main {
+    .main__page {
         grid-template-columns: 15vw 53vw;
     }
 }
 @media all and (max-width: 930px) {
-    main {
+    .main__page {
         grid-template-columns: 25vw 70vw;
     }
 }
 @media all and (max-width: 770px) {
-    main {
+    .main__page {
         grid-template-columns: 19vw 70vw;
     }
 }
 @media screen and(max-width:750px) {
-    main {
+    .main__page {
         grid-template-columns: 75vw;
         justify-content: center;
     }

@@ -59,12 +59,14 @@ body {
 }
 @media screen and (max-width: 1500px) {
     .container {
-        width: 95%;
+        width: 89%;
         margin-left: auto;
         margin-right: auto;
         padding: 20px 20px;
     }
 }
+
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -191,7 +193,7 @@ body {
 
     #burger-menu {
         display: none;
-        margin-right: 5em;
+        margin-right: 1.5em;
         cursor: pointer;
         height: 30px;
         width: 30px;
@@ -379,7 +381,7 @@ main {
             margin-bottom: 3em;
         }
     }
-    .main__cards {
+    .main__groups {
         display: grid;
         grid-template-columns: 27vw 27vw;
         grid-template-rows: 19vw 19vw;
@@ -535,13 +537,15 @@ main {
         }
     }
     @media all and (max-width: 1750px) {
-        .main__cards {
-            grid-template-columns: 32vw 32vw;
-            grid-template-rows: 23vw 23vw;
+        .main__groups {
+            grid-template-columns: 33vw 32.9vw;
+            -ms-grid-rows: 23vw 23vw;
+            grid-template-rows: 23.3vw 23.4vw;
+            gap: 1.2em;
         }
     }
     @media all and (max-width: 930px) {
-        .main__cards {
+        .main__groups {
             display: flex;
             flex-direction: column;
             justify-content: center;

@@ -22,15 +22,15 @@ $rcolor: #e93930;
     font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/SofiaProMedium.woff2") format("woff2"), url("fonts/SofiaProMedium.woff") format("woff"),
-        url("fonts/SofiaProMedium.ttf") format("truetype");
+    src: url("/fonts/SofiaProMedium.woff2") format("woff2"), url("/fonts/SofiaProMedium.woff") format("woff"),
+        url("/fonts/SofiaProMedium.ttf") format("truetype");
 }
 @font-face {
     font-family: "Circular Std";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/CircularStdMedium.woff2") format("woff2"), url("fonts/CircularStdMedium.woff") format("woff"),
-        url("fonts/CircularStdMedium.ttf") format("truetype");
+    src: url("/fonts/CircularStdMedium.woff2") format("woff2"), url("/fonts/CircularStdMedium.woff") format("woff"),
+        url("/fonts/CircularStdMedium.ttf") format("truetype");
 }
 html {
     font-family: "Circular Std", "Sofia Pro", sans-serif;

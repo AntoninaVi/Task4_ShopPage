@@ -12,26 +12,25 @@ $rcolor: #e93930;
 }
 /* Fonts */
 @font-face {
-    font-family: 'Sofia Pro';
+    font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 800;
     src: url("fonts/SofiaProBold.woff2") format("woff2"), url("fonts/SofiaProMedium.woff") format("woff"),
         url("fonts/SofiaProBold.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Sofia Pro';
+    font-family: "Sofia Pro";
     font-style: normal;
     font-weight: 400;
     src: url("/fonts/SofiaProMedium.woff2") format("woff2"), url("fonts/SofiaProMedium.woff") format("woff"),
         url("fonts/SofiaProMedium.ttf") format("truetype");
 }
 @font-face {
-    font-family: 'Circular Std';
+    font-family: "Circular Std";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/CircularStdMedium.woff2") format("woff2"), 
-    url("fonts/CircularStdMedium.woff") format("woff"),
-    url("fonts/CircularStdMedium.ttf") format("truetype");
+    src: url("/fonts/CircularStdMedium.woff2") format("woff2"), url("fonts/CircularStdMedium.woff") format("woff"),
+        url("fonts/CircularStdMedium.ttf") format("truetype");
 }
 html {
     font-family: "Circular Std", "Sofia Pro", sans-serif;
@@ -313,8 +312,8 @@ body {
         }
     }
 }
-@media screen and (max-width: 1580px){
-    .navigation{
+@media screen and (max-width: 1580px) {
+    .navigation {
         width: 97%;
     }
 }
@@ -547,6 +546,7 @@ body {
             }
         }
     }
+    
     @media all and (max-width: 1750px) {
         .main__groups {
             grid-template-columns: 33vw 32.9vw;

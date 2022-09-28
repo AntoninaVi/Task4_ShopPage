@@ -497,7 +497,7 @@ body {
             cursor: pointer;
             &::before {
                 content: "";
-                background-image: url(../img/heart.svg);
+                background-image: url(../img/help.svg);
                 background-size: contain;
                 display: flex;
                 justify-content: center;
@@ -509,7 +509,7 @@ body {
                 z-index: 5;
             }
         }
-    }
+        
 
         @media all and (max-width: 1030px) {
             .heart-button {

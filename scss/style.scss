@@ -57,9 +57,17 @@ body {
     margin-right: auto;
     padding: 52px 46px;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1750px) {
     .container {
-        width: 88%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .container {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         padding: 20px 20px;
@@ -70,7 +78,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    max-width: 100%;
+    max-width: 106%;
     width: 1328px;
     margin-bottom: 67px;
 
@@ -150,7 +158,7 @@ body {
     .nav__items {
         display: flex;
         justify-content: space-between;
-        font-family: "Circular Std";
+        font-family: 'Circular Std';
         font-weight: 400;
         font-size: 17px;
         line-height: 22px;
@@ -207,16 +215,12 @@ body {
             position: relative;
         }
     }
-    @media (max-width: 930px) {
-        #burger-menu {
-            margin-right: -2rem;
-        }
-    }
     @media (max-width: 850px) {
         #burger-menu {
-            margin-right: -10%;
+            margin-right: 8%;
         }
     }
+    
 
     span,
     span:before,
@@ -310,11 +314,6 @@ body {
             margin-bottom: 30px;
             text-decoration: none;
         }
-    }
-}
-@media screen and (max-width: 1580px) {
-    .navigation {
-        width: 97%;
     }
 }
 
@@ -443,17 +442,18 @@ body {
         }
         @media all and (max-width: 690px) {
             .main__img {
-                max-height: 61vmin;
+                max-height: 70vmin;
             }
         }
         @media all and (max-width: 660px) {
             .main__img {
                 max-height: 59vmin;
+                max-width: 100%;
             }
         }
         @media all and (max-width: 630px) {
             .main__img {
-                max-height: 57vmin;
+                max-height: 55vmin;
             }
         }
         @media all and (max-width: 615px) {
@@ -547,7 +547,7 @@ body {
         }
     }
     
-    @media all and (max-width: 1750px) {
+    @media all and (max-width: 1700px) {
         .main__groups {
             grid-template-columns: 33vw 32.9vw;
             -ms-grid-rows: 23vw 23vw;

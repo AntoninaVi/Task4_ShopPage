@@ -61,9 +61,18 @@ body {
   padding: 52px 46px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1750px) {
   .container {
-    width: 88%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px 20px;
@@ -80,7 +89,7 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  max-width: 100%;
+  max-width: 106%;
   width: 1328px;
   margin-bottom: 67px;
 }
@@ -173,7 +182,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Circular Std";
+  font-family: 'Circular Std';
   font-weight: 400;
   font-size: 17px;
   line-height: 22px;
@@ -235,15 +244,9 @@ body {
   }
 }
 
-@media (max-width: 930px) {
-  .navigation #burger-menu {
-    margin-right: -2rem;
-  }
-}
-
 @media (max-width: 850px) {
   .navigation #burger-menu {
-    margin-right: -10%;
+    margin-right: 8%;
   }
 }
 
@@ -342,12 +345,6 @@ body {
   font-size: 32px;
   margin-bottom: 30px;
   text-decoration: none;
-}
-
-@media screen and (max-width: 1580px) {
-  .navigation {
-    width: 97%;
-  }
 }
 
 .main__page {
@@ -515,19 +512,20 @@ body {
 
 @media all and (max-width: 690px) {
   .main__page .main__groups .main__img {
-    max-height: 61vmin;
+    max-height: 70vmin;
   }
 }
 
 @media all and (max-width: 660px) {
   .main__page .main__groups .main__img {
     max-height: 59vmin;
+    max-width: 100%;
   }
 }
 
 @media all and (max-width: 630px) {
   .main__page .main__groups .main__img {
-    max-height: 57vmin;
+    max-height: 55vmin;
   }
 }
 
@@ -634,7 +632,7 @@ body {
   }
 }
 
-@media all and (max-width: 1750px) {
+@media all and (max-width: 1700px) {
   .main__page .main__groups {
     -ms-grid-columns: 33vw 32.9vw;
         grid-template-columns: 33vw 32.9vw;

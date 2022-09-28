@@ -578,7 +578,7 @@ body {
 
 .main__page .main__groups .heart-button::before {
   content: "";
-  background: url(img/heart.svg);
+  background: url(/img/heart.svg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

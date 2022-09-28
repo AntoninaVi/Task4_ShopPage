@@ -497,7 +497,7 @@ body {
             cursor: pointer;
             &::before {
                 content: "";
-                background: url(img/heart.svg);
+                background: url(/img/heart.svg);
                 display: flex;
                 justify-content: center;
                 margin-left: auto;
